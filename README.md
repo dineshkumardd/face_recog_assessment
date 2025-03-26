@@ -1,6 +1,6 @@
 # face_recog_assessment
 
-A new Flutter project.
+A new Flutter project to recognise faces.Pickup image from gallery and see the faces detected as output
 
 ## Getting Started
 
