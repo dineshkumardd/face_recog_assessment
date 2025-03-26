@@ -6,7 +6,6 @@ class FaceDetectionScreen extends StatelessWidget {
   final File imageFile;
   final List<Face> faces;
 
-  // Constructor to accept image file and detected faces
   FaceDetectionScreen({required this.imageFile, required this.faces});
 
   @override
@@ -18,9 +17,7 @@ class FaceDetectionScreen extends StatelessWidget {
       body: Center(
         child: Stack(
           children: [
-            // Display the image
             Image.file(imageFile),
-            // Overlay bounding boxes over the detected faces
             ...faces.map((face) {
               final rect = face.boundingBox;
               return Positioned(
